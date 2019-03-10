@@ -1,4 +1,4 @@
-package cn.com.group;
+package cn.com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
