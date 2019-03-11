@@ -1,22 +1,14 @@
 package cn.com.controller;
 
 
-import java.util.Map;
-
-import org.apache.commons.collections.map.HashedMap;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-
-
 
 import cn.com.pojo.User;
 
@@ -44,14 +36,7 @@ public class UserController {
 		 	return userPo;
 	 }
 	 
-
-	 @PostMapping("/addUser")
-	 public Map<String, Object> addUser(@RequestBody User user){
-		 Map<String, Object> map=new HashedMap();
-		 map.put("msg1", "添加用户信息详情如下："+user+"，添加成功");
-		 return map;
-	 }
-	 
+	
 	
 
 }
